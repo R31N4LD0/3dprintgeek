@@ -2,5 +2,5 @@
 
 export default Home;
 function Home() {
-    return <div>Hello World!</div>;
+    return <div>Teste Vercel</div>;
 }
