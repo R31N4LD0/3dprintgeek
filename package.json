@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/R31N4LD0/3dprintgeek/issues"
   },
-  "homepage": "https://github.com/R31N4LD0/3dprintgeek#readme"
+  "homepage": "https://github.com/R31N4LD0/3dprintgeek#readme",
+  "dependencies": {
+    "next": "^10.0.7",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
 }
