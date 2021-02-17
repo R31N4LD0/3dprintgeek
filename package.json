@@ -1,0 +1,21 @@
+{
+  "name": "3dprintgeek",
+  "version": "1.0.0",
+  "description": "Teste",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/R31N4LD0/3dprintgeek.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/R31N4LD0/3dprintgeek/issues"
+  },
+  "homepage": "https://github.com/R31N4LD0/3dprintgeek#readme"
+}
