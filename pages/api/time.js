@@ -3,7 +3,7 @@ async function time (request, response) {
 
     const pokemonRequestURL = process.env.POKEMON_REQUEST_URL;
 
-    const pokemonCall = await fetch(`${pokemonRequestURL}1`);
+    const pokemonCall = await fetch(`${pokemonRequestURL}pokemon/1`);
     const pokemonJSON = await pokemonCall.json();
     const pokemonName = pokemonJSON.name;
     const dynamicDate2 = new Date();
