@@ -9,10 +9,12 @@ const Form = (props) => {
         isbn,
         setIsbn,
         currentBookId,
+        handleSubmit,
+        resetForm,
     } = props;
     return (
-        <form>
-            <label for="title">title</label>
+        <form onSubmit={handleSubmit}>
+            <label htmlFor="title">title</label>
             <input
                 autoFocus
                 required
@@ -22,7 +24,7 @@ const Form = (props) => {
                 onChange={(e) => setTitle(e.target.value)}
             />
             
-            <label for="author">author</label>
+            <label htmlFor="author">author</label>
             <input
                 required
                 type="text"
@@ -31,7 +33,7 @@ const Form = (props) => {
                 onChange={(e) => setAuthor(e.target.value)}
             />
             
-            <label for="isbn">isbn</label>
+            <label htmlFor="isbn">isbn</label>
             <input
                 required
                 type="text"
@@ -42,6 +44,7 @@ const Form = (props) => {
             <button tabIndex="0" type="submit">
                 {currentBookId !== null ? 'Update' : 'Add'}
             </button>
+            {currentBookId !== null && <button onClick={resetForm}>Cancel</button>}
         </form>
     )
 }
