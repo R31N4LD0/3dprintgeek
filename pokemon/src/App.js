@@ -52,6 +52,7 @@ function App() {
 
   return (
     <>
+    <header>TODO</header>
       <Pagination
         loadNextPage={nextURL ? loadNextPage : null}
         loadPrevPage={prevURL ? loadPrevPage : null}
@@ -64,6 +65,10 @@ function App() {
         loadNextPage={nextURL ? loadNextPage : null}
         loadPrevPage={prevURL ? loadPrevPage : null}
       />
+      <footer>
+        TODO
+        <p>images from <a href="https://github.com/PokeAPI/sprites.git" target="_blank">this repository</a>.</p>
+      </footer>
     </>
   );
 }
