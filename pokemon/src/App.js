@@ -35,8 +35,13 @@ function App() {
   function loadNextPage() {
     setCurrentURL(nextURL);
   }
+
   function loadPrevPage() {
     setCurrentURL(prevURL);
+  }
+
+  function loadDivisor() {
+    setCurrentURL('https://pokeapi.co/api/v2/pokemon?offset=880&limit=20')
   }
   
   // http://localhost:3000/
@@ -47,6 +52,11 @@ function App() {
 
   return (
     <>
+      <Pagination
+        loadNextPage={nextURL ? loadNextPage : null}
+        loadPrevPage={prevURL ? loadPrevPage : null}
+        loadDivisor={loadDivisor}
+      />
       <PokemonList
         pokemonList={pokemonList}
       />

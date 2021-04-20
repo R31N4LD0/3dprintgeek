@@ -1,10 +1,32 @@
-import React from 'react'
+import React from 'react';
+import Button from '@material-ui/core/Button';
 
-export default function Pagination({ loadNextPage, loadPrevPage }) {
+export default function Pagination({ loadNextPage, loadPrevPage, loadDivisor }) {
     return (
         <div>
-            {loadPrevPage && <button onClick={loadPrevPage}>Previous Page</button>}
-            {loadNextPage && <button onClick={loadNextPage}>Next Page</button>}
+            <Button
+                onClick={loadDivisor}
+                size="small" 
+                variant="contained" 
+                color="secondary">
+                Divisor
+            </Button>
+            <Button
+                onClick={loadPrevPage}
+                disabled={!loadPrevPage}
+                size="small" 
+                variant="contained" 
+                color="primary">
+                Prev
+            </Button>
+            {loadNextPage && <Button
+                onClick={loadNextPage}
+                disabled={!loadNextPage}
+                size="small" 
+                variant="contained" 
+                color="primary">
+                Next
+            </Button>}
         </div>
     )
 }
