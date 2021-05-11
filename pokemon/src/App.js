@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Pagination from './components/Pagination';
 import PokemonList from './components/PokemonList';
 import axios from 'axios';
+// import './App.scss';
+import './scss/index.scss';
 
 function App() {
   const [pokemonList, setPokemonList] = useState([]);
@@ -67,7 +69,7 @@ function App() {
       />
       <footer>
         TODO
-        <p>images from <a href="https://github.com/PokeAPI/sprites.git" target="_blank">this repository</a>.</p>
+        <p>images from <a href="https://github.com/PokeAPI/sprites.git" target="_blank" rel="noreferrer">this repository</a>.</p>
       </footer>
     </>
   );
